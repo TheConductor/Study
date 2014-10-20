@@ -1,4 +1,8 @@
-[Specific questions](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
+[Algorithm Study Guide](https://github.com/kanwei/algorithms/blob/master/README.markdown)
+
+[Data Structures Study Guide](https://github.com/Blahah/datastructures/blob/master/README.md)
+
+[Specific Questions](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 
 1. There are two sorted arrays A and B of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log (m+n)).
 [Solution](http://www.programcreek.com/2012/12/leetcode-median-of-two-sorted-arrays-java/)
@@ -15,4 +19,3 @@ reorder it to: L0→Ln→L1→Ln-1→L2→Ln-2→...
 
 5. Given an array where elements are sorted in ascending order, convert it to a height balanced BST.
 [Solution](http://www.programcreek.com/2013/01/leetcode-convert-sorted-array-to-binary-search-tree-java/)
-
