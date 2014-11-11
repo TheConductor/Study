@@ -1,4 +1,4 @@
-require 'MedianOfAarrays'
+require 'median_of_arrays'
 
 describe MedianOfAarrays do
   
