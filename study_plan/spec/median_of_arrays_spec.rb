@@ -52,8 +52,7 @@ describe MedianOfAarrays do
 
   def check_median(array_a, array_b)
     test_object = MedianOfAarrays.new
-    test_object.array_a = array_a
-    test_object.array_b = array_b
+    test_median = test_object.return_median(array_a, array_b)
 
     combo_array = array_a + array_b # this array combines array_a and array_b
     combo_array = combo_array.sort
@@ -62,9 +61,9 @@ describe MedianOfAarrays do
     # if total number of elements is even average the middle two elements 
     # otherwise total number of elements is odd return the middle one.
     if combo_array.size%2==0
-      expect(test_object.return_median).to eq (combo_array[(combo_array.size)/2 - 1] + combo_array[(combo_array.size)/2])/2
+      expect(test_median).to eq (combo_array[(combo_array.size)/2 - 1] + combo_array[(combo_array.size)/2])/2
     else
-      expect(test_object.return_median).to eq combo_array[(combo_array.size)/2]
+      expect(test_median).to eq combo_array[(combo_array.size)/2]
     end 
   end 
   
