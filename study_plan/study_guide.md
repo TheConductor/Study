@@ -1,6 +1,32 @@
-[Algorithm Study Guide](https://github.com/kanwei/algorithms/blob/master/README.markdown)
+[Algorithms In Ruby](https://github.com/kanwei/algorithms/blob/master/README.markdown)
+- Write alroghtims in C++ and use the ruby implmentations above to test
+  them.
+    * Search algorithms
+      - Binary Search            Algorithms::Search.binary_search
+      - Knuth-Morris-Pratt       Algorithms::Search.kmp_search
+    * Sorting algorithms
+      - Bubble sort              Algorithms::Sort.bubble_sort
+      - Comb sort                Algorithms::Sort.comb_sort
+      - Selection sort           Algorithms::Sort.selection_sort
+      - Heapsort                 Algorithms::Sort.heapsort
+      - Insertion sort           Algorithms::Sort.insertion_sort
+      - Shell sort               Algorithms::Sort.shell_sort
+      - Quicksort                Algorithms::Sort.quicksort
+  - Mergesort                Algorithms::Sort.mergesort
+  - Dual-Pivot Quicksort     Algorithms::Sort.dualpivotquicksort
 
-[Data Structures Study Guide](https://github.com/Blahah/datastructures/blob/master/README.md)
+[Data Structures in Ruby](https://github.com/Blahah/datastructures/blob/master/README.md)
+- Data structures to be written and tested against ruby
+  implmentations.
+  - queue
+  - stack
+  - tree
+  - linked list
+  - adjacency list (graph)
+  - deque
+  - priority queue
+  - priority deque
+  - binary tree
 
 [Specific Questions](http://www.programcreek.com/2012/11/top-10-algorithms-for-coding-interview/)
 
