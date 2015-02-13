@@ -1,3 +1,4 @@
+[Learning C++](https://developers.google.com/edu/c++/)
 [Algorithms In Ruby](https://github.com/kanwei/algorithms/blob/master/README.markdown)
 - Write alroghtims in C++ and use the ruby implmentations above to test
   them.
