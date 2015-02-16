@@ -61,7 +61,7 @@ describe MedianOfAarrays do
     end
 
     describe 'when A > B odd # of elements' do
-     it_should_behave_like "check median", [0,1,2], [300,400,500,600]
+      it_should_behave_like "check median", [0,1,2,4], [200,300,400,500,600]
     end
 
     describe 'when B > A even # of elements' do
