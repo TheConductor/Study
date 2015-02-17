@@ -21,10 +21,9 @@ describe MedianOfAarrays do
     end
 
     shared_examples "randomize array" do |size_a, random_range_a, size_b, random_range_b|
-      let(:array_a) {Array.new(Random.new.rand(size_a))}
-      let(:array_b) {Array.new(Random.new.rand(size_b))}
-
       it 'creates arrays and checks medians' do
+        array_a =  Array.new(Random.new.rand(size_a))
+        array_b =  Array.new(Random.new.rand(size_b))
         larger_array_size = if size_a > size_b
                               size_a
                             else
@@ -40,16 +39,16 @@ describe MedianOfAarrays do
             array_b[i] = Random.new.rand(random_range_b) + array_b[i-1]
           end
         end
-
-        test_object = MedianOfAarrays.new
-        test_median = test_object.return_median(array_a, array_b)
         combo_array = array_a + array_b # this array combines array_a and array_b
         combo_array = combo_array.sort
-
+        test_object = MedianOfAarrays.new
+        test_median = test_object.return_median(array_a, array_b)
         # if total number of elements is even average the middle two elements
         # otherwise total number of elements is odd return the middle one.
-        if combo_array.size%2==0
-          expect(test_median).to eq (combo_array[(combo_array.size)/2 - 1] + combo_array[(combo_array.size)/2])/2
+        if array_a.size%2==0
+          value_1 = combo_array[(combo_array.size)/2 - 1]
+          value_2 = combo_array[(combo_array.size)/2]
+          expect(test_median).to eq (value_1+value_2)/2
         else
           expect(test_median).to eq combo_array[(combo_array.size)/2]
         end
