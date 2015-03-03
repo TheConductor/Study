@@ -14,7 +14,6 @@ class RemoveDuplicatesFromArray
       end
       last_item = array[adjusted_index]
     end
-    puts array.size
     return array
   end
 end
