@@ -2,6 +2,7 @@ class Test
 	#puts "This is a test"
 
 	def return_true
-		true
+		print('truth')
+    true
 	end
 end
